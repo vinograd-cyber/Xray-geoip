@@ -39,3 +39,5 @@ V2Ray-SiteDAT
 ❤致谢
 - https://github.com/v2ray/domain-list-community
 - https://oisd.nl
+- https://adaway.org
+- https://github.com/gfwlist/gfwlist
