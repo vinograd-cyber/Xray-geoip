@@ -9,7 +9,7 @@
 🟢使用
 
 - 下载 geofiles 文件夹中的 h1y.dat 域名文件放到 v2ray或xray的资源目录中（通常是v2ray/bin/或xray/bin/），域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中（通常是etc/config.json）按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
-- [v2ray路由配置示例](https://raw.githubusercontent.com/y823/V2Ray-SiteDAT/main/routing.json)
+- [v2ray路由配置示例](https://github.com/y823/V2Ray-SiteDAT/blob/main/routing.json)
 
 🟢下载
 - [h1y.dat](https://raw.githubusercontent.com/y823/V2Ray-SiteDAT/main/geofiles/h1y.dat)
