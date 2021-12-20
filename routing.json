@@ -1,0 +1,32 @@
+{
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "domainStrategy": "IPIfNonMatch",
+      "domainMatcher": "mph",
+      "rules": [
+        {
+          "domain": [
+            "ext:h1y.dat:rej"
+          ],
+          "type": "field",
+          "outboundTag": "block"
+        },
+        {
+          "type": "field",
+          "outboundTag": "proxy",
+          "domain": [
+            "ext:h1y.dat:gfw"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "domain": [
+            "ext:h1y.dat:cn"
+          ]
+        }
+      ]
+    }
+  }
+}
