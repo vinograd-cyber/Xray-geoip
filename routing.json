@@ -7,15 +7,31 @@
       "rules": [
         {
           "domain": [
-            "ext:h1y.dat:rej"
+            "ext:h1y.dat:rej",
+            "geosite:category-ads-all"
+          ],
+          "type": "field",
+          "outboundTag": "block"
+        },
+        {
+          "ip": [
+            "geoip:rej"
           ],
           "type": "field",
           "outboundTag": "block"
         },
         {
           "type": "field",
+          "ip": [
+            "ext:geoip-only-cn-private.dat:private"
+          ],
+          "outboundTag": "block"
+        },
+        {
+          "type": "field",
           "outboundTag": "proxy",
           "domain": [
+            "geosite:geolocation-!cn",
             "ext:h1y.dat:gfw"
           ]
         },
@@ -23,7 +39,15 @@
           "type": "field",
           "outboundTag": "direct",
           "domain": [
+            "geosite:cn",
             "ext:h1y.dat:cn"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "ip": [
+            "ext:geoip-only-cn-private.dat:cn"
           ]
         }
       ]
