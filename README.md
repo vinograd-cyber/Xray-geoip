@@ -15,7 +15,8 @@
 - [v2ray路由配置示例](https://github.com/y823/V2Ray-SiteDAT/blob/main/routing.json)
 
 🟢下载
-- [h1y.dat](https://raw.githubusercontent.com/y823/V2Ray-SiteDAT/main/geofiles/h1y.dat)
+- [h1y.dat](https://raw.githubusercontent.com/y823/GeoIP/main/h1y.dat)
+- [geoip.dat](https://raw.githubusercontent.com/y823/GeoIP/main/geoip.dat)
 
 ✔🟢特别说明：
 
