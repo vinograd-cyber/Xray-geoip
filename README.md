@@ -2,7 +2,7 @@
 
 🟢为何制作h1y.dat和geoip.dat
 
-- 很多时候，V2Ray内置的域名不能满足使用，不过 V2Ray 可以使用外部自定义的域名文件，特制了h1y.dat，可以供大家用于 Project V（V2Ray）和Project X（XRay）的自定义域名文件。
+- 很多时候，V2Ray内置的域名不能满足使用，不过 V2Ray 可以使用外部自定义的域名文件，因而制作了h1y.dat，可以供大家用于 Project V（V2Ray）和Project X（XRay）的自定义域名文件。
 这个域名文件每天自动更新，如果你使用了我提供的域名文件也请定期更新。
 - 相比于官方原版的geoip.dat：
   - 中国大陆的IPV4地址数据采用了[APNIC](https://www.apnic.net)的最新数据
