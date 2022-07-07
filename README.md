@@ -1,5 +1,8 @@
-🌈# 项目说明🌈：
-- 💚⛑️🛡️帮助v2ray或xray用户加速🚀境外网站访问、拦截🚫那些投放网页广告、弹窗广告🚯、病毒木马🦠、钓鱼欺诈性💵网站的域名和IP，为用户带来安全舒适🍃的上网体验！
+
+![projectX项目LOGO](https://xtls.github.io/LogoX2.png)
+
+🌈**项目说明**🌈：
+- 💚⛑️🛡️***帮助v2ray或xray用户加速🚀境外网站访问、拦截🚫那些投放网页广告、弹窗广告🚯、病毒木马🦠、钓鱼欺诈性💵网站的域名和IP，为用户带来安全舒适🍃的上网体验！***
 
 - 💡域名文件-h1y.dat：
   - ext:h1y.dat:cn 🚦国内的网站
@@ -140,7 +143,7 @@ mso-border-left-alt:0.5000pt solid windowtext;border-right:1.0000pt solid window
 border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:1.0000pt solid windowtext;
 mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="left" style="text-align:justify;text-justify:distribute-all-lines;"><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="幼圆">07/07/22</font></span><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></td></tr></tbody></table>
 
-🌈# 使用方法🌈
+🌈**使用方法**🌈
 - 📚打开 https://github.com/vinograd-cyber/GeoIP 看到的都是最新版本。
 - 📚下载 [h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat) 和[geoip.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat)DAT格式文件放到 v2ray或xray服务的资源目录中（指的是v2ray或xray的可执行文件所在的bin目录下），域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
 - 📚[v2ray路由配置示例](https://github.com/vinograd-cyber/GeoIP/blob/main/routing.json)
@@ -154,6 +157,7 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
       "domainMatcher": "mph",
       "rules": [
         {
+          "comment": "拦截投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性网站",
           "domain": [
             "ext:h1y.dat:rej",
             "geosite:category-ads-all"
@@ -162,6 +166,7 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           "outboundTag": "block"
         },
         {
+          "comment": "拦截投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性IP",
           "ip": [
             "geoip:rej"
           ],
@@ -176,6 +181,7 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           "outboundTag": "block"
         },
         {
+          "comment": "访问境外、GFW名单里的网站代理转发，使用vpn加速",
           "type": "field",
           "outboundTag": "proxy",
           "domain": [
@@ -184,6 +190,7 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           ]
         },
         {
+          "comment": "访问中国网站本地直连，不用vpn加速",
           "type": "field",
           "outboundTag": "direct",
           "domain": [
@@ -192,14 +199,15 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           ]
         },
         {
+          "comment": "访问中国境内IP本地直连，不用vpn加速",
           "type": "field",
           "outboundTag": "direct",
           "ip": [
-            "ext:geoip-only-cn-private.dat:cn"
+            "geoip:cn"
           ]
         }
       ]
     }
   }
-}
+} 
 ```
