@@ -1,4 +1,4 @@
-⛑️🛡️帮助v2ray或xray用户加速🚀境外网站访问、拦截🚫那些投放网络广告🚯、病毒木马🦠、钓鱼欺诈性💵的恶意网站，为用户带来安全舒适🍃的上网体验！
+⛑️🛡️帮助v2ray或xray用户加速🚀境外网站访问、拦截🚫那些投放网页广告、弹窗广告🚯、病毒木马🦠、钓鱼欺诈性💵网站的域名和IP，为用户带来安全舒适🍃的上网体验！
 
 🌈使用
 - 📚打开 https://github.com/vinograd-cyber/GeoIP 看到的都是最新版本。
@@ -13,10 +13,10 @@
 - 💡域名文件-h1y.dat：
   - ext:h1y.dat:cn 🚦国内的网站
   - ext:h1y.dat:gfw 🚀被GFW墙掉的境外网站
-  - ext:h1y.dat:rej 🚫投放网络广告、病毒木马、钓鱼欺诈性的网站
+  - ext:h1y.dat:rej 🚫投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性网站
 - 💡IP 文件-geoip.dat：
   - geoip:cn 🚦国内的IP，不含港澳台地区
-  - geoip:rej 🚫投放网络广告、病毒木马、钓鱼欺诈性的IP
+  - geoip:rej 🚫投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性IP
 
 <table class="MsoTableGrid" border="1" cellspacing="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
 mso-border-left-alt:0.5000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
