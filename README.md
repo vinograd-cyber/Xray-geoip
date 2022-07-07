@@ -4,7 +4,64 @@
 - 📚打开 https://github.com/vinograd-cyber/GeoIP 看到的都是最新版本。
 - 📚下载 [h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat) 和[geoip.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat)DAT格式文件放到 v2ray或xray的资源目录中（通常就是v2ray或xray的可执行文件所在的bin目录下），域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
 - 📚[v2ray路由配置示例](https://github.com/vinograd-cyber/GeoIP/blob/main/routing.json)
-
+```json
+{
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "domainStrategy": "IPIfNonMatch",
+      "domainMatcher": "mph",
+      "rules": [
+        {
+          "domain": [
+            "ext:h1y.dat:rej",
+            "geosite:category-ads-all"
+          ],
+          "type": "field",
+          "outboundTag": "block"
+        },
+        {
+          "ip": [
+            "geoip:rej"
+          ],
+          "type": "field",
+          "outboundTag": "block"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "ext:geoip-only-cn-private.dat:private"
+          ],
+          "outboundTag": "block"
+        },
+        {
+          "type": "field",
+          "outboundTag": "proxy",
+          "domain": [
+            "geosite:geolocation-!cn",
+            "ext:h1y.dat:gfw"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "domain": [
+            "geosite:cn",
+            "ext:h1y.dat:cn"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "direct",
+          "ip": [
+            "ext:geoip-only-cn-private.dat:cn"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
 
 🌈下载
 - 🛩️[h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/h1y.dat)
