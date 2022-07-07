@@ -1,3 +1,4 @@
+⛑️🛡️帮助用户屏蔽网络广告和欺诈钓鱼，为用户带来安全舒适的上网体验！
 🌈使用
 - 打开 https://github.com/vinograd-cyber/GeoIP 看到的都是最新版本。
 - 下载 [h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat) 域名文件放到 v2ray或xray的资源目录中，域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
