@@ -1,8 +1,8 @@
-⛑️🛡️帮助用户屏蔽网络广告和欺诈钓鱼，为用户带来安全舒适的上网体验！
+⛑️🛡️帮助v2ray或xray用户加速境外网站访问、拦截那些投放网络广告、病毒木马、钓鱼欺诈性的恶意网站，为用户带来安全舒适的上网体验！
 
 🌈使用
 - 打开 https://github.com/vinograd-cyber/GeoIP 看到的都是最新版本。
-- 下载 [h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat) 域名文件放到 v2ray或xray的资源目录中，域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
+- 下载 [h1y.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat) 和[geoip.dat](https://raw.githubusercontent.com/vinograd-cyber/GeoIP/main/geoip.dat)DAT格式文件放到 v2ray或xray的资源目录中（通常就是v2ray或xray的可执行文件所在的bin目录下），域名文件的标签支持cn/gfw/rej三种，在 v2ray或xray 配置文件中按标签设定路由规则，所有的域名均以子域名的形式进行匹配。
 - [v2ray路由配置示例](https://github.com/vinograd-cyber/GeoIP/blob/main/routing.json)
 
 🌈下载
@@ -42,7 +42,7 @@ border-top:1.0000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtex
 mso-border-bottom-alt:0.5000pt solid windowtext;background:rgb(146,208,80);"><p class="MsoNormal" align="left" style="text-align:justify;text-justify:distribute-all-lines;"><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="幼圆">数量</font></span><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></td><td width="89" valign="top" style="width:67.2000pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
 mso-border-left-alt:0.5000pt solid windowtext;border-right:1.0000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
 border-top:1.0000pt solid windowtext;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:1.0000pt solid windowtext;
-mso-border-bottom-alt:0.5000pt solid windowtext;background:rgb(146,208,80);"><p class="MsoNormal" align="left" style="text-align:justify;text-justify:distribute-all-lines;"><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="幼圆">发布</font></span><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></td></tr><tr style="height:16.3000pt;"><td width="91" valign="top" style="width:68.8000pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
+mso-border-bottom-alt:0.5000pt solid windowtext;background:rgb(146,208,80);"><p class="MsoNormal" align="left" style="text-align:justify;text-justify:distribute-all-lines;"><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="幼圆">发布(mm/dd/yy)</font></span><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></td></tr><tr style="height:16.3000pt;"><td width="91" valign="top" style="width:68.8000pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
 mso-border-left-alt:0.5000pt solid windowtext;border-right:1.0000pt solid windowtext;mso-border-right-alt:0.5000pt solid windowtext;
 border-top:none;mso-border-top-alt:0.5000pt solid windowtext;border-bottom:1.0000pt solid windowtext;
 mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" style="text-align:left;"><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="幼圆">h1y.dat</font></span><span style="font-family:幼圆;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></td><td width="255" valign="top" style="width:191.3000pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
