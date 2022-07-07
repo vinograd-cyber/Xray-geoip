@@ -159,8 +159,7 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
         {
           "comment": "拦截投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性网站",
           "domain": [
-            "ext:h1y.dat:rej",
-            "geosite:category-ads-all"
+            "ext:h1y.dat:rej"
           ],
           "type": "field",
           "outboundTag": "block"
@@ -174,18 +173,10 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           "outboundTag": "block"
         },
         {
-          "type": "field",
-          "ip": [
-            "ext:geoip-only-cn-private.dat:private"
-          ],
-          "outboundTag": "block"
-        },
-        {
-          "comment": "访问境外、GFW名单里的网站代理转发，使用vpn加速",
+          "comment": "访问境外GFW名单里的网站代理转发，使用vpn加速",
           "type": "field",
           "outboundTag": "proxy",
           "domain": [
-            "geosite:geolocation-!cn",
             "ext:h1y.dat:gfw"
           ]
         },
@@ -194,7 +185,6 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
           "type": "field",
           "outboundTag": "direct",
           "domain": [
-            "geosite:cn",
             "ext:h1y.dat:cn"
           ]
         },
@@ -209,5 +199,5 @@ mso-border-bottom-alt:0.5000pt solid windowtext;"><p class="MsoNormal" align="le
       ]
     }
   }
-} 
+}
 ```
