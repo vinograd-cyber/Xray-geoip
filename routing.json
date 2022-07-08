@@ -6,7 +6,7 @@
       "domainMatcher": "mph",
       "rules": [
         {
-          "comment": "拦截投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性网站",
+          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、釣魚欺詐性網站",
           "domain": [
             "ext:h1y.dat:rej"
           ],
@@ -14,7 +14,7 @@
           "outboundTag": "block"
         },
         {
-          "comment": "拦截投放网页广告、弹窗广告、病毒木马、钓鱼欺诈性IP",
+          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、釣魚欺詐性IP",
           "ip": [
             "geoip:rej"
           ],
@@ -22,7 +22,7 @@
           "outboundTag": "block"
         },
         {
-          "comment": "访问境外GFW名单里的网站代理转发，使用vpn加速",
+          "comment": "訪問GFW名單裡的網站代理轉發，使用vpn加速",
           "type": "field",
           "outboundTag": "proxy",
           "domain": [
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "comment": "访问中国网站本地直连，不用vpn加速",
+          "comment": "訪問中國網站本地直連，不用vpn加速",
           "type": "field",
           "outboundTag": "direct",
           "domain": [
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "comment": "访问中国境内IP本地直连，不用vpn加速",
+          "comment": "訪問中國境內IP本地直連，不用vpn加速",
           "type": "field",
           "outboundTag": "direct",
           "ip": [
