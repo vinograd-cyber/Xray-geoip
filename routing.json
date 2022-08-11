@@ -6,7 +6,7 @@
       "domainMatcher": "mph",
       "rules": [
         {
-          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、釣魚欺詐性網站",
+          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、惡意欺詐性網站",
           "domain": [
             "ext:h1y.dat:rej"
           ],
@@ -14,7 +14,7 @@
           "outboundTag": "block"
         },
         {
-          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、釣魚欺詐性IP",
+          "comment": "攔截投放網頁廣告、彈窗廣告、病毒木馬、惡意欺詐性IP",
           "ip": [
             "geoip:rej"
           ],
